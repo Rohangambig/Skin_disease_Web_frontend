@@ -1,0 +1,140 @@
+.doctor-recommandation
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mobile-container {
+    width: 25%;
+    position: relative;
+    width: fit-content; /* Adjust based on your image dimensions */
+  }
+  
+  .mockup-image {
+    width: 100%; /* Ensures image scales responsively */
+  }
+  
+  .text-content {
+    position: absolute;
+    top: 50%; /* Adjust for vertical positioning inside the mockup */
+    left: 50%; /* Center text horizontally */
+    transform: translate(-50%, -50%); /* Center align */
+    color: black; /* Change to ensure readability over the mockup */
+    font-size: 1em; /* Adjust font size as needed */
+    text-align: center;
+    width: 75%;
+    height: fit-content;
+  }
+
+.medicine-container
+{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.doctors-list1,.doctors-list2 {
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;    
+}
+
+
+
+.doctors-list1::-webkit-scrollbar,.doctors-list2::-webkit-scrollbar {
+    display: none; 
+}
+
+.doctors-list1 ul,.doctors-list2 ul 
+{
+    display: flex;
+    gap: 30px;
+    /* padding: 10px; */
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.doctors-list1   ul li , .doctors-list2   ul li 
+{
+    border: 1px solid #01194c;
+    list-style-type:none ;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctors-list1  ul li:hover,.doctors-list2  ul li:hover
+{
+    z-index: 100;
+    transform: scale(1.05);
+    background-color: rgb(247, 247, 255);
+}
+
+.doctors-list1 img,.doctors-list2 img  
+{
+    /* border-radius: 50%; */
+    width: 150px;
+}
+
+
+.doctors-list1  ul li , 
+.doctors-list2  ul li 
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 5px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.about-medicine{
+    width: fit-content;
+}
+
+.about-medicine div
+{
+    display: flex;
+    gap: 20px;
+}
+
+.about-medicine div button 
+{
+    background-color: #01194c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.cart_button{
+    background-color: #01194c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+.cart_button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;   
+}
+
+.about-medicine div button:hover{
+    background-color: white;
+    color: black;
+}

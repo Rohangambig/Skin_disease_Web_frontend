@@ -1,0 +1,67 @@
+.chat-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 90vh;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(0, 3, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reciever-lists {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow-y: auto;
+}
+
+.reciever-lists form {
+    margin: 20px;
+    width: 100%;
+}
+.reciever-lists form input {
+    width: 90%;
+    padding: 7px;
+    background-color: rgb(223, 223, 223);
+    border: none;
+    border: 1px solid rgb(201, 201, 201);
+    font-size: 15px;
+    border-radius: 10px;
+    height: 25px;
+}
+
+.each-friend  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.each-friend  li {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.each-friend  li img {
+    width: 20px;
+}
+
+.message-room {
+    width: 75%;
+    height: 100%;
+    border: 1px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

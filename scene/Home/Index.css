@@ -1,0 +1,212 @@
+.home-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    min-height: 100vh;
+    max-height: fit-content;
+    background-color: #ffffff;
+}
+
+.logos
+{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly; 
+    width: 100%;
+    align-items: center;
+}
+
+.logos img{
+    width: 150px;
+    cursor: pointer;
+}
+
+#botImage{
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+}
+.bot-container
+{
+    width: fit-content;
+    height: fit-content;
+    padding:0px 20px;
+    background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    border-radius:50%;
+}
+
+#imageHover {
+    position: absolute; /* or relative, depending on your layout */
+    z-index: 1000;
+    color: white;
+    background-color: rgb(0, 0, 0); /* Optional: background for better visibility */
+    padding: 5px; /* Optional: some padding */
+    border-radius: 5px;
+    width: 150px; 
+    margin-bottom: 20px;
+    text-align: center;/* Optional: rounded corners */
+}
+
+
+.home
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home h1{
+    animation: slideFadeIn 1.5s ease-in-out;
+}
+
+
+.users-container
+{
+    width: 100%;
+    height: 550px;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: -5px 5px 20px black;
+    gap: 20px;
+}
+
+.take-image
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: fit-content;
+}
+
+.doctors-medicines {
+    width: 45%;
+    height: 350px;
+    background: linear-gradient(to bottom left, #01194c, white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px; 
+}
+
+#doctorImage {
+    width: 100%;
+    height: 300px;
+}
+
+.doctorsList {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: end;
+}
+
+
+.upload-image
+{
+    width: 45%;
+    height: fit-content;
+    border-radius: 20px;
+    height: 400px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    /* background-image: linear-gradient(to top left,rgb(4, 4, 55),white); */
+    /* border: 1px solid black; */
+}
+
+
+.appoitedDoctors
+{
+    width: 45%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgb(172, 172, 172);
+    padding: 15px 20px;
+    transform: scale(1.05);
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appoitedDoctors:hover {
+    z-index: 100;
+    transform: scale(1.20);
+    /* box-shadow: 0px 8px 20px rgb(255, 255, 255);  */
+    border: 1px solid black;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.appoitedDoctors span 
+{
+    font-weight: bold;
+}
+.scroll-container {
+  display: flex;
+  align-items: center;
+}
+
+.scroll-button {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255); /* White background */
+    border: none;
+    margin: 0px 20px;
+    padding: 20px 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Hover effect */
+  .scroll-button:hover {
+    background-color: #01194c;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  /* Active effect */
+  .scroll-button:active {
+    transform: scale(0.55);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  }
+  

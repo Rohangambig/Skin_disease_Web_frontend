@@ -1,0 +1,123 @@
+
+.image-upload-container 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+}
+
+.image-upload-form 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.image-upload-form input[type="file"] {
+    font-size: 16px;           /* Smaller font size for file input */
+    padding: 8px;              /* Padding inside the input */
+    border-radius: 5px;        /* Rounded corners */
+    border: 1px solid #ccc;    /* Light border */
+    background-color: #f9f9f9; /* Light background for the input */
+    cursor: pointer;           /* Change cursor to pointer on hover */
+    width: auto;               /* Keep width manageable for file input */
+    margin-right: 10px;        /* Space between file input and the button */
+    outline: none;             /* Remove outline on focus */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.image-upload-form input[type="file"]:hover {
+    background-color: #e6e6e6; /* Slight background change on hover */
+}
+
+.image-upload-form input[type="file"]::-webkit-file-upload-button {
+    padding: 8px 12px;        /* Padding for the button inside file input */
+    font-size: 16px;          /* Consistent font size */
+    border: 1px solid #ccc;   /* Border for the button */
+    border-radius: 5px;       /* Rounded button */
+    background-color: #fff;   /* Button background color */
+    color: #000;              /* Button text color */
+    cursor: pointer;          /* Make the button clickable */
+}
+
+.image-upload-form input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #ddd;   /* Change button color on hover */
+}
+    
+.image-upload-form button
+{
+    padding: 12px 7px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #01194c;
+    cursor: pointer;
+    color: white;
+}
+
+.image-upload-form button:active
+{
+    transform: scale(0.86);
+}
+
+.image-upload-form button:hover
+{
+    background-color: #263f74;
+}
+
+#close
+{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 2000;
+    transition: background-color ease-in-out 0.8s,color ease-in-out 0.8s;
+}
+#close:hover{
+    background-color: black;
+    color: white;
+}
+
+.image-details
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.image-upload-form div{
+    display: flex;
+}
+
+.image-upload-form div img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+.uploaded-image-preview {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-upload-label:hover .uploaded-image-preview {
+    opacity: 0.8;  /* Slight dimming on hover */
+  }
+  

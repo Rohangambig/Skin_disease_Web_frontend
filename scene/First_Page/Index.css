@@ -1,0 +1,90 @@
+.first-container
+{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    /* background-color: aqua   ; */
+    gap: 20px;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav ul 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav ul li 
+{
+    list-style-type:none;
+}
+
+.content-container
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+    text-align: center;
+}
+
+.bot-image
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.doctors-image
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.first-container-button
+{
+    display: flex;
+    gap: 50px;
+}
+
+.first-container-button button 
+{
+    font-size: 15px;
+    padding: 15px 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.first-container-button button:nth-child(odd)
+{
+    background-color: black;
+    color: white;
+    border-radius:5px ;
+}
+
+.first-container-button button:nth-child(even)
+{
+    border:2px solid black;
+    color: rgb(0, 0, 0);
+    border-radius:5px ;
+    background-color: white;
+}
+
